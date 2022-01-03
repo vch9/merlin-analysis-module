@@ -1,0 +1,17 @@
+opam-version: "2.0"
+version: "dev"
+
+depends: [
+  "ocaml" {>= "4.12" & < "4.13"}
+  "yojson"
+  "menhirSdk" {>= "20211012" & < "20211013"}
+  "menhirLib" {>= "20211012" & < "20211013"}
+  "menhir" {>= "20211012" & < "20211013"}
+  "csexp"
+  "result"
+  "cmdliner"
+]
+
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]

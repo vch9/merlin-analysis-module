@@ -1,0 +1,5 @@
+(executable
+ (name bin)
+ (libraries merlin.analysis))
+
+(vendored_dirs vendor)
